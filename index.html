@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soch - Your Daily Gita Verse</title>
+    <link rel="icon" type="image/png" href="appicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,700&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Averia Serif Libre', serif;
+            background: #ffffff;
+            color: #2e2e2e;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 80px 24px 60px;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 28px;
+            margin-bottom: 32px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: -1.2px;
+            margin-bottom: 16px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #2e2e2e;
+            opacity: 0.65;
+            letter-spacing: -0.36px;
+            line-height: 1.5;
+            margin-bottom: 48px;
+            max-width: 420px;
+        }
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 100%;
+            max-width: 480px;
+            padding: 0 24px;
+            margin-bottom: 60px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .feature-dot {
+            width: 17px;
+            height: 16px;
+            border-radius: 6px;
+            flex-shrink: 0;
+            margin-top: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.14);
+        }
+
+        .feature-text {
+            font-size: 14px;
+            color: #2e2e2e;
+            letter-spacing: -0.36px;
+            line-height: 1.5;
+        }
+
+        .divider {
+            width: 100%;
+            max-width: 480px;
+            height: 1px;
+            background: rgba(0,0,0,0.08);
+            margin: 0 0 48px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+        }
+
+        .highlight-green { background: rgba(177, 255, 212, 0.6); }
+        .highlight-yellow { background: rgba(255, 255, 177, 0.6); }
+
+        footer {
+            padding: 40px 24px;
+            text-align: center;
+            width: 100%;
+            max-width: 480px;
+        }
+
+        footer a {
+            font-size: 13px;
+            color: #2e2e2e;
+            opacity: 0.4;
+            text-decoration: none;
+            margin: 0 12px;
+            letter-spacing: -0.36px;
+        }
+
+        footer a:hover { opacity: 0.7; }
+
+        .copyright {
+            font-size: 12px;
+            color: #2e2e2e;
+            opacity: 0.3;
+            margin-top: 16px;
+            letter-spacing: -0.36px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="appicon.png" alt="Soch app icon" class="app-icon">
+        <h1>soch</h1>
+        <p class="tagline">A daily verse from the Bhagavad Gita, chosen for your day. Write, reflect, and watch your inner world take shape.</p>
+    </div>
+
+    <div class="features">
+        <span class="section-title highlight-green">what soch does</span>
+
+        <div class="feature">
+            <div class="feature-dot" style="background: #B1FFD4;"></div>
+            <span class="feature-text">Delivers a personalized Gita verse every day based on your calendar, weather, and mood.</span>
+        </div>
+        <div class="feature">
+            <div class="feature-dot" style="background: #FFFFB1;"></div>
+            <span class="feature-text">A private journal to write your reflections, with color highlights to mark what matters.</span>
+        </div>
+        <div class="feature">
+            <div class="feature-dot" style="background: #FFB1BA;"></div>
+            <span class="feature-text">Tracks your emotional history across moods and verses so you can see how you grow over time.</span>
+        </div>
+        <div class="feature">
+            <div class="feature-dot" style="background: #B0D9FF;"></div>
+            <span class="feature-text">A home screen widget that keeps your verse with you throughout the day.</span>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="features">
+        <span class="section-title highlight-yellow">your data</span>
+
+        <div class="feature">
+            <div class="feature-dot" style="background: #FFFFB1;"></div>
+            <span class="feature-text">Soch reads your calendar to understand your day and choose a verse that fits. Calendar data is processed in the moment and never stored.</span>
+        </div>
+        <div class="feature">
+            <div class="feature-dot" style="background: #FFFFB1;"></div>
+            <span class="feature-text">Your journal entries are stored securely in Firebase and are only accessible to you.</span>
+        </div>
+        <div class="feature">
+            <div class="feature-dot" style="background: #FFFFB1;"></div>
+            <span class="feature-text">Soch does not sell, share, or monetize your personal data. Ever.</span>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="mailto:ru.uppalapati@gmail.com">Contact</a>
+        </div>
+        <p class="copyright">&copy; 2026 Soch. All rights reserved.</p>
+    </footer>
+</body>
+</html>
